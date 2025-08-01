@@ -1,0 +1,121 @@
+/* Variáveis de cor */
+:root {
+  --cor-principal: #4CAF50;
+  --cor-secundaria: #f0f0f0;
+  --cor-destaque: #333;
+  --cor-botao: #FF9800;
+}
+
+/* Estilos gerais */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-destaque);
+  margin: 0;
+  padding: 0;
+}
+
+/* Cabeçalho */
+header {
+  background-color: var(--cor-principal);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Seções */
+section {
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  font-size: 1.8rem;
+  color: var(--cor-principal);
+}
+
+section p, section ul {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Imagem */
+section img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+/* Botões */
+button {
+  background-color: var(--cor-botao);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #FF5722;
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--cor-destaque);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  section {
+    margin: 10px;
+    padding: 15px;
+  }
+}
